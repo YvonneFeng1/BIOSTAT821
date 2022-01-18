@@ -62,7 +62,7 @@ def analyze_data(mylist, string_option):
 
 
 Average = analyze_data(x1, "average")
-Standard_deviation = analyze_data(x1, "standard deviation")
+Standard_deviation = analyze_data(x1, "standard deviation") 
 Covariance = analyze_data(x1, "covariance")
 Correlation = analyze_data(x1, "correlation")
 # outcomes
