@@ -62,13 +62,9 @@ def analyze_data(mylist, string_option):
     elif string_option == "correlation":
         return correlation
 
+# outcome
+print(analyze_data(x1, "average"))
+print(analyze_data(x1, "standard deviation"))
+print(analyze_data(x1, "covariance"))
+print(analyze_data(x1, "correlation"))
 
-Average = analyze_data(x1, "average")
-Standard_deviation = analyze_data(x1, "standard deviation") 
-Covariance = analyze_data(x1, "covariance")
-Correlation = analyze_data(x1, "correlation")
-# outcomes
-Average
-Standard_deviation
-Covariance
-Correlation
