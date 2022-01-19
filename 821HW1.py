@@ -8,6 +8,7 @@ Created on Mon Jan 17 16:09:20 2022
 
 
 def get_data(path):
+    """read the txt file and gives a list of lists of integers"""
     res_list = []
     with open(path, "r") as f:
         for line in f:
@@ -26,6 +27,7 @@ import math
 
 
 def analyze_data(mylist, string_option):
+    """read a list of lists of intergers and return a string option that can be average, standard deviation, covariance or correlation"""
     list_elements = [item for sublist in mylist for item in sublist]
     count = 0
     for listElem in mylist:
