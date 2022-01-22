@@ -64,7 +64,7 @@ def analyze_data(mylist: list, string_option: str) -> float:
     return 0.0
 
 
-if __name__ == "__main__":
+if __name__ == "__main__": 
     print(analyze_data(x1, "average"))
     print(analyze_data(x1, "standard deviation"))
     print(analyze_data(x1, "covariance"))
