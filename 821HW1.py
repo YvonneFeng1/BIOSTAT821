@@ -69,4 +69,4 @@ if __name__ == "__main__":
     print(analyze_data(x1, "standard deviation"))
     print(analyze_data(x1, "covariance"))
     print(analyze_data(x1, "correlation"))
-    print(analyze_data(x1, "average"))
+    print(analyze_data(x1, "average"))  
