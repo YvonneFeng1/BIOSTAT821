@@ -7,7 +7,7 @@ Created on Mon Jan 17 16:09:20 2022
 """
 
 
-def get_data(path):
+def get_data(path: str) -> list:
     """read the txt file and gives a list of lists of integers"""
     res_list = []
     with open(path, "r") as f:
@@ -20,13 +20,12 @@ def get_data(path):
 get_data("/Users/chloehiddleston/Desktop/BIOSTAT821/example.txt")
 # outcome list
 x1 = get_data("/Users/chloehiddleston/Desktop/BIOSTAT821/example.txt")
-x1
 
 
 import math
 
 
-def analyze_data(mylist, string_option):
+def analyze_data(mylist: list, string_option: str) -> float:
     """read a list of lists of intergers and return a string option that can be average, standard deviation, covariance or correlation"""
     list_elements = [item for sublist in mylist for item in sublist]
     count = 0
@@ -62,9 +61,12 @@ def analyze_data(mylist, string_option):
     elif string_option == "correlation":
         return correlation
 
-# outcome
-print(analyze_data(x1, "average"))
-print(analyze_data(x1, "standard deviation"))
-print(analyze_data(x1, "covariance"))
-print(analyze_data(x1, "correlation"))
+    return 0.0
 
+
+if __name__ == "__main__":
+    print(analyze_data(x1, "average"))
+    print(analyze_data(x1, "standard deviation"))
+    print(analyze_data(x1, "covariance"))
+    print(analyze_data(x1, "correlation"))
+    print(analyze_data(x1, "average"))
