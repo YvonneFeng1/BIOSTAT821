@@ -22,7 +22,7 @@ get_data("/Users/chloehiddleston/Desktop/BIOSTAT821/example.txt")
 x1 = get_data("/Users/chloehiddleston/Desktop/BIOSTAT821/example.txt")
 
 
-def analyze_data(mylist: list, string_option: str) -> float:
+def analyze_data(mylist: list[int], string_option: str) -> float:
     """Read a list of lists of intergers and return a string option that 
     can be average, standard deviation, covariance or correlation"""
     list_elements = [item for sublist in mylist for item in sublist]
