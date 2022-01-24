@@ -5,10 +5,10 @@ Created on Mon Jan 17 16:09:20 2022
 
 @author: Yixuan (Yvonne) Feng, Jingya Cheng, Tiya Zhang
 """
-
+import math
 
 def get_data(path: str) -> list:
-    """read the txt file and gives a list of lists of integers"""
+    """Read the txt file and gives a list of lists of integers"""
     res_list = []
     with open(path, "r") as f:
         for line in f:
@@ -22,11 +22,9 @@ get_data("/Users/chloehiddleston/Desktop/BIOSTAT821/example.txt")
 x1 = get_data("/Users/chloehiddleston/Desktop/BIOSTAT821/example.txt")
 
 
-import math
-
-
 def analyze_data(mylist: list, string_option: str) -> float:
-    """read a list of lists of intergers and return a string option that can be average, standard deviation, covariance or correlation"""
+    """Read a list of lists of intergers and return a string option that 
+    can be average, standard deviation, covariance or correlation"""
     list_elements = [item for sublist in mylist for item in sublist]
     count = 0
     for listElem in mylist:
